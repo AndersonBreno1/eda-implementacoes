@@ -44,7 +44,7 @@ public class CircularQueue {
             this.tail = -1;
             return this.queue[0];
         } else {
-            Pair p = this.queue[(this.head + 1)%capacity];
+            Pair p = this.queue[this.head];
             this.head = (this.head + 1) % capacity;
             return p;
         }
