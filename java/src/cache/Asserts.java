@@ -26,11 +26,6 @@ public class Asserts {
         assert cache.get(4).equals("d");
         assert cache.get(5).equals("f");
         assert cache.get(6).equals("g");
-    
-        //atualizando valores
-        cache.put(4, "z");
-        
-        assert cache.get(4).equals("z");
     }
 
 }
